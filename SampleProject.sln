@@ -4,10 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Web", "SampleProject\SampleProject.Web.csproj", "{A5B22D79-8BC2-47AE-9367-426F2CFAE5AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A2F68D0-3BCD-4C4A-BDFA-F11A753515F9} = {4A2F68D0-3BCD-4C4A-BDFA-F11A753515F9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Lib", "SampleProject.Lib\SampleProject.Lib.csproj", "{4A2F68D0-3BCD-4C4A-BDFA-F11A753515F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Test", "SampleProject.Test\SampleProject.Test.csproj", "{5FE85C1F-2719-473B-977D-04B5C5AF029B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5B22D79-8BC2-47AE-9367-426F2CFAE5AE} = {A5B22D79-8BC2-47AE-9367-426F2CFAE5AE}
+		{4A2F68D0-3BCD-4C4A-BDFA-F11A753515F9} = {4A2F68D0-3BCD-4C4A-BDFA-F11A753515F9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
